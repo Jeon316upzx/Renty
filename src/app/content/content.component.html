@@ -1,0 +1,135 @@
+<div class="container">
+  <div class="mycontent">
+    <div class="row">
+      <div class="col-md-3  myleft">
+        <div class="info">
+          <div class="panel panel-default">
+                <div class="panel-heading"><i class="fa fa-info"></i>Info</div>
+                <hr>
+                <div class="panel-body"><strong>Please Note:</strong>  The vehicles shown are examples. Specific models within a car
+                    class may vary in availability and features,such as passenger seating,luggage capacity and mileage.</div>
+          </div>
+        </div>
+
+               <div class="filter-results">
+                 <div class="panel panel-default">
+                       <div class="panel-heading"><i class="fa fa-info"></i>Filter results</div>
+                       <hr>
+                       <p class="breaks">PRICE RANGE</p>
+                       <div class="panel-body">
+                         <input type="range" max="10000" min="0">
+                         <p class="breaks">MANUFACTURERS</p>
+
+                         <div class="vehicle-checkboxs">
+                           <label>
+                           <input type="checkbox"> Ford
+                           <p class="span-right"><span class="nums"> 1 </span></p>
+                           </label>
+
+
+                           <label>
+                           <input type="checkbox"> Reno
+                           <p class="span-right"><span class="nums"> 1 </span></p>
+                           </label>
+
+
+
+                           <label>
+                           <input type="checkbox"> Reno
+                           <p class="span-right"><span class="nums"> 1 </span></p>
+                           </label>
+
+
+                           <label>
+                           <input type="checkbox"> Ford
+                           <p class="span-right"><span class="nums"> 1 </span></p>
+                           </label>
+
+
+                           <label>
+                           <input type="checkbox"> Ford
+                           <p class="span-right"><span class="nums"> 1 </span></p>
+                           </label>
+
+                         </div>
+
+                         <p class="breaks">NUMBER OF PASSENGERS</p>
+                         <input type="range" max="5" min="0">
+                         <p class="breaks">VEHICLE TYPE</p>
+
+                         <div class="vehicle-checkboxs">
+                           <label>
+                           <input type="checkbox"> Economy
+                           <span class="nums"> 1 </span>
+                           </label>
+
+
+                           <label>
+                           <input type="checkbox"> Compact
+                           <span class="nums"> 3 </span>
+                           </label>
+
+
+
+                           <label>
+                           <input type="checkbox"> Compact
+                           <span class="nums"> 1 </span>
+                           </label>
+
+
+                           <label>
+                           <input type="checkbox"> Compact
+                           <span class="nums"> 1 </span>
+                           </label>
+
+                         </div>
+
+
+                       </div>
+                 </div>
+               </div>
+
+      </div>
+
+      <div class="col-md-8 myright">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <p class="panel-title-left"> <i class="fa fa-filter"></i>Results (10 from 24)</p>
+            <p class="panel-title-right">SORT BY: Price | Type </p>
+            <hr>
+          </div>
+          <div class="panel-body cars-panel">
+             <div class="row" *ngFor="let car of cars | myfilter : searchitem">
+               <div class="col-md-4">
+                 <img src="{{ car.image }}" height="200px" width="200px">
+               </div>
+
+               <div class="col-md-4 my-middle-details">
+                 <p><strong>{{ car.name  }}</strong>  | {{ car.vehicleTyp }}<p>
+                   <p class="detail-text"><i class="fa fa-users"></i> {{ car.passenger }} passengers</p>
+                   <p class="detail-text"><i class="fa fa-suitcase"></i> {{ car.capacity }}</p>
+                   <p class="detail-text"><i class="fa fa-flag-checkered"></i> {{ car.transmission }} transmission</p>
+                   <p class="detail-text"><i class="fa fa-snowflake-o"></i> {{ car.options }}</p>
+                   <p class="detail-text"><i class="fa fa-tachometer"></i> {{ car.mileage }}</p>
+                   <p class="car-details">[+] view car details</p>
+               </div>
+
+               <div class="col-md-4 price-section">
+                 <p class="price">{{ car.price }}.00<p>
+                   <p >Unlimited free miles included </p>
+                   <button class="btn select-btn"> SELECT <i class="fa fa-sign-in"></i></button>
+               </div>
+             </div>
+          </div>
+          <div class="panel-footer">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<app-paginate></app-paginate>

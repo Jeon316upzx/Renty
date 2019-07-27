@@ -1,0 +1,33 @@
+.mytabs{
+  background-color: #d3d3d3;
+  border-top: 3px solid #a9a9a9;
+  border-bottom: 3px solid #a9a9a9;
+}
+
+.mytabs li a{
+  height: 100px;
+  color: black;
+  padding-top:20px;
+}
+
+.mytabs li a:hover{
+  background-color:black;
+  color:white;
+}
+
+.myspan{
+  margin-right: 3px;
+  background-color: transparent;
+  width:60px;
+  height: 60px;
+  padding: 20px;
+  border-radius: 50%;
+  border:1px solid black;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.myspan:hover{
+  border:1px solid white;
+}

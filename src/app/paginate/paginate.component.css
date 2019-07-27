@@ -1,0 +1,23 @@
+.pagination{
+  margin-left: 300px;
+}
+
+
+.page-item{
+  margin-top: 15px;
+  margin-left: 5px;
+  color: black;
+}
+
+.pagination > li > a {
+  background-color: white;
+  color: black;
+  border: 1px solid #d3d3d3;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: orange!Important;
+    border: solid 1px #orange!Important;
+}

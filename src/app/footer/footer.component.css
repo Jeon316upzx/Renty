@@ -1,0 +1,50 @@
+.footer{
+  padding-top: 40px;
+  height: 300px;
+  width: 100%;
+  background-color: white;
+  margin-top: 100px;
+}
+
+.box{
+  text-align: center;
+  margin-top: 10px;
+  border: 1px solid #d3d3d3;
+  height: 150px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.fa-facebook{
+  margin-right: 30px;
+}
+
+
+.fa-twitter{
+  margin-right: 30px;
+}
+
+.bottom{
+  height: 70px;
+}
+
+.trademark{
+  margin-top: 30px;
+  float: right;
+}
+.bottom-icon{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.sales{
+  color: blue;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.press{
+  color: blue;
+}
