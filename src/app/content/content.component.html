@@ -1,4 +1,56 @@
 <div class="container">
+
+
+  <form id="myform">
+    <div class="container">
+      <p class="title"><i class="fa fa-search"></i>Search for a car :</p>
+
+         <div class="form-row">
+
+           <div class="col-2">
+             <label for="location" >LOCATION</label>
+             <label for="location" class="airport">AIRPORT CODES</label>
+             <input type="text" [(ngModel)] ="searchitem"  name="mysearch"  class="form-control" id="location" placeholder="New York,JSB">
+             
+           </div>
+
+           <div class="col-3">
+             <label for="pick-up-date">PICK UP DATE</label>
+             <input type="datetime-local" class="form-control" id="pick-up-date" placeholder="">
+           </div>
+
+           <div class="col-3" id="drop">
+             <label for="pick-up-date">DROP-OFF DATE</label>
+             <input type="datetime-local" class="form-control" id="pick-up-date" placeholder="">
+           </div>
+
+           <div class="col-2">
+                 <label for="car-type">CAR TYPE</label>
+                 <div class="dropdown">
+                 <button class="btn btn-car dropdown-toggle" type="button" data-toggle="dropdown">standard
+                 <span class="caret"></span></button>
+                 <ul class="dropdown-menu">
+                 <li><a href="#">HTML</a></li>
+                 <li><a href="#">CSS</a></li>
+                 <li><a href="#">JavaScript</a></li>
+                 </ul>
+                 </div>
+           </div>
+
+           <div class="col-2">
+             <button class="btn update">UPDATE <i class="fa fa-refresh"></i></button>
+           </div>
+
+
+         </div>
+
+       <label for="return">
+       <input type="checkbox" name="return"> Return at different location
+      </label>
+    </div>
+  </form>
+
+
   <div class="mycontent">
     <div class="row">
       <div class="col-md-3  myleft">
@@ -99,7 +151,7 @@
             <hr>
           </div>
           <div class="panel-body cars-panel">
-             <div class="row" *ngFor="let car of cars">
+             <div class="row" *ngFor="let car of cars | myfilter : searchitem">
                <div class="col-md-4">
                  <img src="{{ car.image }}" height="200px" width="200px">
                </div>

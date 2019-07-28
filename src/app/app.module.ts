@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProgressComponent } from './progress/progress.component';
-import { SearchComponent } from './search/search.component';
+
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { PaginateComponent } from './paginate/paginate.component';
@@ -16,7 +16,6 @@ import { MyfilterPipe } from './myfilter.pipe';
     AppComponent,
     NavbarComponent,
     ProgressComponent,
-    SearchComponent,
     ContentComponent,
     FooterComponent,
     PaginateComponent,

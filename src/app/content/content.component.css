@@ -115,3 +115,46 @@ input[type=checkbox]{
   font-weight: bold;
   font-size: 25px;
 }
+
+
+
+#myform{
+  width: 100%;
+  height: 200px;
+  background-color: white!important;
+  margin-top: 20px;
+  border-top: 5px solid orange!important;
+}
+
+.title{
+  margin-top: 15px;
+}
+
+#location{
+  width: 150px;
+}
+
+label{
+  font-size: 10px;
+}
+
+.airport{
+  color: blue;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  margin-left: 23px;
+}
+
+#pick-up-date{
+  width: 230px;
+}
+
+.update{
+  background-color: orange;
+  margin-top: 30px;
+}
+
+.btn-car{
+  border: 1px solid black;
+  background-color: white;
+}
